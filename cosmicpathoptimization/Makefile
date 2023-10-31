@@ -25,6 +25,9 @@ style:
 fix-style:
 	autopep8 --in-place --recursive --aggressive .
 
+submit:
+	kattis -f $(MAIN)
+
 clean:
 	@rm -rf __pycache__
 	@rm -rf .mypy_cache
